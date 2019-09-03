@@ -1,0 +1,5 @@
+# ensuring uniqueness
+
+CREATE CONSTRAINT ON (p:Patient) ASSERT p.name IS UNIQUE
+CREATE CONSTRAINT ON (i:Illness) ASSERT i.name IS UNIQUE
+CREATE CONSTRAINT ON (t:Treatments) ASSERT t.name IS UNIQUE

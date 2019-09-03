@@ -1,0 +1,479 @@
+-- Used for testing. Feel free to ignore
+
+CREATE (p:Patient:Doctor {name: 'James Jones', id:1})
+With 1 as dummy
+MATCH (p:Patient{name: 'James Jones'}),
+(i:Illness {name: 'illness_4'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'James Jones'}),
+(i:Illness {name: 'illness_8'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'James Jones'}),
+(i:Illness {name: 'illness_7'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient:Doctor {name: 'Jennifer Rose', id:2})
+With 1 as dummy
+MATCH (p:Patient{name: 'Jennifer Rose'}),
+(i:Illness {name: 'illness_2'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Jennifer Rose'}),
+(i:Illness {name: 'illness_3'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient:Doctor {name: 'Jack Smith', id:3})
+With 1 as dummy
+MATCH (p:Patient{name: 'Jack Smith'}),
+(i:Illness {name: 'illness_8'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Jack Smith'}),
+(i:Illness {name: 'illness_7'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient:Doctor {name: 'Peter Hernandez', id:4})
+With 1 as dummy
+MATCH (p:Patient{name: 'Peter Hernandez'}),
+(i:Illness {name: 'illness_10'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Peter Hernandez'}),
+(i:Illness {name: 'illness_1'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient:Doctor {name: 'Mrs. Amber Simmons MD', id:5})
+With 1 as dummy
+MATCH (p:Patient{name: 'Mrs. Amber Simmons MD'}),
+(i:Illness {name: 'illness_5'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient:Doctor {name: 'Kimberly Evans', id:6})
+With 1 as dummy
+MATCH (p:Patient{name: 'Kimberly Evans'}),
+(i:Illness {name: 'illness_6'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Kimberly Evans'}),
+(i:Illness {name: 'illness_5'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Kimberly Evans'}),
+(i:Illness {name: 'illness_10'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Elizabeth Bryant', id:7})
+With 1 as dummy
+MATCH (p:Patient{name: 'Elizabeth Bryant'}),
+(i:Illness {name: 'illness_5'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Elizabeth Bryant'}),
+(i:Illness {name: 'illness_1'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'James York Jr.', id:8})
+With 1 as dummy
+MATCH (p:Patient{name: 'James York Jr.'}),
+(i:Illness {name: 'illness_8'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'James York Jr.'}),
+(i:Illness {name: 'illness_3'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'James York Jr.'}),
+(i:Illness {name: 'illness_9'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Larry Johnson', id:9})
+With 1 as dummy
+MATCH (p:Patient{name: 'Larry Johnson'}),
+(i:Illness {name: 'illness_6'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Larry Johnson'}),
+(i:Illness {name: 'illness_9'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Larry Johnson'}),
+(i:Illness {name: 'illness_2'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Samantha Erickson', id:10})
+With 1 as dummy
+MATCH (p:Patient{name: 'Samantha Erickson'}),
+(i:Illness {name: 'illness_3'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Walter Smith', id:11})
+With 1 as dummy
+MATCH (p:Patient{name: 'Walter Smith'}),
+(i:Illness {name: 'illness_9'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Michael Garcia', id:12})
+With 1 as dummy
+MATCH (p:Patient{name: 'Michael Garcia'}),
+(i:Illness {name: 'illness_10'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Michael Garcia'}),
+(i:Illness {name: 'illness_3'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Amanda Wise', id:13})
+With 1 as dummy
+MATCH (p:Patient{name: 'Amanda Wise'}),
+(i:Illness {name: 'illness_6'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Amanda Wise'}),
+(i:Illness {name: 'illness_10'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Amanda Wise'}),
+(i:Illness {name: 'illness_2'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Kayla Sanchez', id:14})
+With 1 as dummy
+MATCH (p:Patient{name: 'Kayla Sanchez'}),
+(i:Illness {name: 'illness_10'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Kayla Sanchez'}),
+(i:Illness {name: 'illness_7'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Darren Wilson', id:15})
+With 1 as dummy
+MATCH (p:Patient{name: 'Darren Wilson'}),
+(i:Illness {name: 'illness_1'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Hannah Roth', id:16})
+With 1 as dummy
+MATCH (p:Patient{name: 'Hannah Roth'}),
+(i:Illness {name: 'illness_7'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Hannah Roth'}),
+(i:Illness {name: 'illness_2'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Hannah Roth'}),
+(i:Illness {name: 'illness_4'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Michael Hall', id:17})
+With 1 as dummy
+MATCH (p:Patient{name: 'Michael Hall'}),
+(i:Illness {name: 'illness_3'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Michael Hall'}),
+(i:Illness {name: 'illness_6'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Julie Taylor', id:18})
+With 1 as dummy
+MATCH (p:Patient{name: 'Julie Taylor'}),
+(i:Illness {name: 'illness_8'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Julie Taylor'}),
+(i:Illness {name: 'illness_10'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Jimmy Taylor', id:19})
+With 1 as dummy
+MATCH (p:Patient{name: 'Jimmy Taylor'}),
+(i:Illness {name: 'illness_8'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Jimmy Taylor'}),
+(i:Illness {name: 'illness_7'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Jimmy Taylor'}),
+(i:Illness {name: 'illness_3'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (p:Patient {name: 'Jeffrey Decker', id:20})
+With 1 as dummy
+MATCH (p:Patient{name: 'Jeffrey Decker'}),
+(i:Illness {name: 'illness_9'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+MATCH (p:Patient{name: 'Jeffrey Decker'}),
+(i:Illness {name: 'illness_10'})
+CREATE (p)-[h:has_illness]->(i)
+With 1 as dummy
+CREATE (d:Doctor {name: 'Dr. John Scott', id:21})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Ryan Turner', id:22})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Emily Hudson', id:23})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Mrs. Amy Ortega', id:24})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Lawrence Travis', id:25})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Troy Jones', id:26})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Jason Huff Jr.', id:27})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Walter Smith', id:28})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Aaron Hernandez', id:29})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Tony Gregory', id:30})
+With 1 as dummy
+CREATE (d:Doctor {name: 'Bradley Gonzalez', id:31})
+With 1 as dummy
+MATCH (p:Patient{id: 1}),
+(d:Doctor {id: 5})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 1}),
+(d:Doctor {id: 3})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 2}),
+(d:Doctor {id: 6})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 2}),
+(d:Doctor {id: 24})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 2}),
+(d:Doctor {id: 4})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 2}),
+(d:Doctor {id: 29})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 2}),
+(d:Doctor {id: 3})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 3}),
+(d:Doctor {id: 30})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 4}),
+(d:Doctor {id: 3})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 4}),
+(d:Doctor {id: 30})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 4}),
+(d:Doctor {id: 25})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 4}),
+(d:Doctor {id: 22})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 5}),
+(d:Doctor {id: 4})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 5}),
+(d:Doctor {id: 6})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 5}),
+(d:Doctor {id: 6})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 5}),
+(d:Doctor {id: 29})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 5}),
+(d:Doctor {id: 27})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 6}),
+(d:Doctor {id: 24})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 6}),
+(d:Doctor {id: 2})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 6}),
+(d:Doctor {id: 28})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 6}),
+(d:Doctor {id: 29})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 7}),
+(d:Doctor {id: 5})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 8}),
+(d:Doctor {id: 23})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 8}),
+(d:Doctor {id: 22})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 8}),
+(d:Doctor {id: 6})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 8}),
+(d:Doctor {id: 2})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 9}),
+(d:Doctor {id: 1})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 9}),
+(d:Doctor {id: 22})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 10}),
+(d:Doctor {id: 4})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 10}),
+(d:Doctor {id: 5})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 10}),
+(d:Doctor {id: 4})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 10}),
+(d:Doctor {id: 2})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 11}),
+(d:Doctor {id: 6})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 11}),
+(d:Doctor {id: 29})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 11}),
+(d:Doctor {id: 3})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 11}),
+(d:Doctor {id: 30})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 12}),
+(d:Doctor {id: 26})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 12}),
+(d:Doctor {id: 3})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 12}),
+(d:Doctor {id: 4})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 13}),
+(d:Doctor {id: 1})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 14}),
+(d:Doctor {id: 29})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 14}),
+(d:Doctor {id: 6})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 15}),
+(d:Doctor {id: 4})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 15}),
+(d:Doctor {id: 31})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 15}),
+(d:Doctor {id: 5})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 15}),
+(d:Doctor {id: 30})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 15}),
+(d:Doctor {id: 22})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 16}),
+(d:Doctor {id: 4})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 16}),
+(d:Doctor {id: 5})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 16}),
+(d:Doctor {id: 29})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 17}),
+(d:Doctor {id: 5})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 17}),
+(d:Doctor {id: 26})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 17}),
+(d:Doctor {id: 28})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 17}),
+(d:Doctor {id: 4})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 17}),
+(d:Doctor {id: 5})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 18}),
+(d:Doctor {id: 5})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 18}),
+(d:Doctor {id: 2})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 18}),
+(d:Doctor {id: 23})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 19}),
+(d:Doctor {id: 6})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 19}),
+(d:Doctor {id: 4})
+CREATE (p)-[:doctored_by]->(d)
+With 1 as dummy
+MATCH (p:Patient{id: 20}),
+(d:Doctor {id: 25})
+CREATE (p)-[:doctored_by]->(d)

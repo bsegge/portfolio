@@ -1,0 +1,107 @@
+-- Used for testing. Feel free to ignore
+
+
+CREATE (t:Treatment {name: 'treatment_1'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_2'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_3'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_4'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_5'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_6'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_7'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_8'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_9'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_10'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_11'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_12'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_13'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_14'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_15'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_16'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_17'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_18'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_19'})
+With 1 as dummy
+CREATE (t:Treatment {name: 'treatment_20'})
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_1'}),
+(t:Treatment {name: 'treatment_13'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_2'}),
+(t:Treatment {name: 'treatment_20'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_3'}),
+(t:Treatment {name: 'treatment_1'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_4'}),
+(t:Treatment {name: 'treatment_11'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_4'}),
+(t:Treatment {name: 'treatment_17'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_5'}),
+(t:Treatment {name: 'treatment_18'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_5'}),
+(t:Treatment {name: 'treatment_8'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_5'}),
+(t:Treatment {name: 'treatment_3'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_6'}),
+(t:Treatment {name: 'treatment_18'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_6'}),
+(t:Treatment {name: 'treatment_13'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_7'}),
+(t:Treatment {name: 'treatment_18'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_8'}),
+(t:Treatment {name: 'treatment_6'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_8'}),
+(t:Treatment {name: 'treatment_3'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_9'}),
+(t:Treatment {name: 'treatment_10'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_9'}),
+(t:Treatment {name: 'treatment_10'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
+MATCH (i:Illness{name: 'illness_10'}),
+(t:Treatment {name: 'treatment_2'})
+CREATE (i)<-[:treats]-(t)
+With 1 as dummy
