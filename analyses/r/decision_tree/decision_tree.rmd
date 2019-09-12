@@ -79,7 +79,7 @@ Our dataset contains diagnostic data for 579 cancer-screenings, digitized from i
 Each of these measures is a taken from the cell nuclei present in the image generated from the procedure. The mean, standard error, and "worst" (largest) value are calculated for each image and recorded. Therefore, we have 30 variables (10 real-value measurements * 3 statistically derived values). Each variable is recorded with four significant digits. There are 357 benign classifications and 212 malignant classifications.
 
 
-We want to understand our data, so we preview it with a few R functions.
+We want to understand our data, so we preview it with a few R functions:
 ```{r echo=T, results='hide'}
 names(breast_cancer)
 head(breast_cancer)
@@ -124,7 +124,7 @@ plot(fit)
 
 Looking at one specific path from the tree that was created, we can follow the logic and see that our output given these filtering parameters is more favorble for predicting a classification:
 ```{r}
-train[train$concave.points_worst<=0.142 & train$area_worst>947.9,1]
+train[train$concave.points_worst>0.145 & train$concavity_se<=0.08,1]
 ```
 
 Measuring accuracy:
